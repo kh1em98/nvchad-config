@@ -16,7 +16,7 @@ local plugins = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
-    end, -- Override to setup mason-lspconfig
+    end,
   },
 
   -- override plugin configs
@@ -47,10 +47,12 @@ local plugins = {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {
-      { "nvim-telescope/telescope-live-grep-args.nvim" },
-      config = function()
-        require("telescope").load_extension("live_grep_args")
-      end,
+      { 
+        "nvim-telescope/telescope-live-grep-args.nvim",
+        config = function()
+          require("telescope").load_extension("live_grep_args")
+        end,
+      }
     },
     opts = {
      defaults = {
