@@ -84,6 +84,9 @@ local plugins = {
   {
     'terrortylor/nvim-comment',
   },
+  {
+    'otavioschwanck/cool-substitute.nvim',
+  }
 }
 
 return plugins
