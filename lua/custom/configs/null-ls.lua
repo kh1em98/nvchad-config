@@ -14,11 +14,12 @@ local sources = {
   b.formatting.gofmt,
 
   -- code-actions
-  b.code_actions.xo,
+  b.code_actions.eslint,
 
   -- completion
   b.completion.luasnip,
   b.completion.spell,
+  require("typescript.extensions.null-ls.code-actions"),
 }
 
 local async_formatting = function(bufnr)
