@@ -11,9 +11,9 @@ local sources = {
   -- formatting 
   b.formatting.prettier_eslint,
   b.formatting.prismaFmt,
+  b.formatting.gofmt,
 
   -- code-actions
-  b.code_actions.eslint_d,
   b.code_actions.xo,
 
   -- completion

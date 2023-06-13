@@ -12,6 +12,8 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "go",
+    "rust",
   },
   indent = {
     enable = true,
@@ -35,6 +37,8 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "gopls",
+    "rust-analyzer",
 
     -- c/cpp stuff
     "clangd",
