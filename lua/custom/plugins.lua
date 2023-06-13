@@ -58,6 +58,12 @@ local plugins = {
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope.nvim"
       }
+  },
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
   }
 
   -- To make a plugin not be loaded
